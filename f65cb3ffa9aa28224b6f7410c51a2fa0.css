@@ -1,0 +1,102 @@
+body {
+    font-family: Oswald, sans-serif;
+    font-weight: 300px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: url('b182c6f1f8a82a2bd29d9cfef64e49fa.jpg');
+    background-size: cover;
+    letter-spacing: 0.8px
+}
+
+#app {
+    
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
+    -o-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
+}
+
+.logo-wrapper {
+    padding: 10px 0;
+}
+
+.logo-wrapper svg {
+    width: 175px;
+    height: auto;
+}
+.logo-wrapper svg path {
+    fill: #fffe;
+}
+
+.profit-calc-wrapper {
+    border: 1px solid #eeea;
+    -webkit-box-shadow: 0px 10px 43px -8px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 43px -8px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 43px -8px rgba(0,0,0,0.5);
+}
+
+.profit-calc-wrapper .row {
+    padding-top: 10px;
+}
+
+.profit-calc-wrapper .row .column div {
+    line-height: 34px;
+    color: #fffe;
+    margin-top: 10px;
+}
+
+.profit-calc-wrapper .row .column .result-wrapper {
+    margin-top: 20px;
+}
+
+.profit-calc-wrapper .row .column .result {
+    line-height: 50px;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+input {
+    display: block;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 5px 5px 12px;
+    letter-spacing: 1px;
+    max-width: 100px;
+    background: #fffd;
+    margin-top: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-section {
+    font-size: 14px;
+}
+
+.quote {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.column.col-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
