@@ -163,7 +163,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],32:[function(require,module,exports) {
+},{}],31:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -181,7 +181,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],31:[function(require,module,exports) {
+},{}],32:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -241,7 +241,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":25,"fbjs/lib/emptyObject":32,"fbjs/lib/emptyFunction":31}],33:[function(require,module,exports) {
+},{"object-assign":25,"fbjs/lib/emptyObject":31,"fbjs/lib/emptyFunction":32}],39:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -295,7 +295,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],35:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -358,7 +358,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":31}],28:[function(require,module,exports) {
+},{"./emptyFunction":32}],29:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -372,7 +372,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],29:[function(require,module,exports) {
+},{}],28:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -432,7 +432,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":33,"fbjs/lib/warning":35,"./lib/ReactPropTypesSecret":28}],17:[function(require,module,exports) {
+},{"fbjs/lib/invariant":39,"fbjs/lib/warning":40,"./lib/ReactPropTypesSecret":29}],17:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1784,7 +1784,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":25,"fbjs/lib/emptyObject":32,"fbjs/lib/invariant":33,"fbjs/lib/warning":35,"fbjs/lib/emptyFunction":31,"prop-types/checkPropTypes":29}],13:[function(require,module,exports) {
+},{"object-assign":25,"fbjs/lib/emptyObject":31,"fbjs/lib/invariant":39,"fbjs/lib/warning":40,"fbjs/lib/emptyFunction":32,"prop-types/checkPropTypes":28}],14:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1792,7 +1792,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":16,"./cjs/react.development.js":17}],34:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":16,"./cjs/react.development.js":17}],33:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1826,7 +1826,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],36:[function(require,module,exports) {
+},{}],34:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1901,7 +1901,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":31}],37:[function(require,module,exports) {
+},{"./emptyFunction":32}],35:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1938,7 +1938,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],39:[function(require,module,exports) {
+},{}],36:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2050,7 +2050,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":46}],40:[function(require,module,exports) {
+},{"./isNode":46}],37:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2344,7 +2344,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":13,"fbjs/lib/ExecutionEnvironment":34,"object-assign":25,"fbjs/lib/emptyFunction":31,"fbjs/lib/EventListener":36,"fbjs/lib/getActiveElement":37,"fbjs/lib/shallowEqual":39,"fbjs/lib/containsNode":40,"fbjs/lib/focusNode":38,"fbjs/lib/emptyObject":32}],44:[function(require,module,exports) {
+},{"react":14,"fbjs/lib/ExecutionEnvironment":33,"object-assign":25,"fbjs/lib/emptyFunction":32,"fbjs/lib/EventListener":34,"fbjs/lib/getActiveElement":35,"fbjs/lib/shallowEqual":36,"fbjs/lib/containsNode":37,"fbjs/lib/focusNode":38,"fbjs/lib/emptyObject":31}],44:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -17838,7 +17838,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":13,"fbjs/lib/invariant":33,"fbjs/lib/warning":35,"fbjs/lib/ExecutionEnvironment":34,"object-assign":25,"fbjs/lib/emptyFunction":31,"fbjs/lib/EventListener":36,"fbjs/lib/getActiveElement":37,"fbjs/lib/shallowEqual":39,"fbjs/lib/containsNode":40,"fbjs/lib/focusNode":38,"fbjs/lib/emptyObject":32,"prop-types/checkPropTypes":29,"fbjs/lib/hyphenateStyleName":41,"fbjs/lib/camelizeStyleName":42}],14:[function(require,module,exports) {
+},{"react":14,"fbjs/lib/invariant":39,"fbjs/lib/warning":40,"fbjs/lib/ExecutionEnvironment":33,"object-assign":25,"fbjs/lib/emptyFunction":32,"fbjs/lib/EventListener":34,"fbjs/lib/getActiveElement":35,"fbjs/lib/shallowEqual":36,"fbjs/lib/containsNode":37,"fbjs/lib/focusNode":38,"fbjs/lib/emptyObject":31,"prop-types/checkPropTypes":28,"fbjs/lib/hyphenateStyleName":41,"fbjs/lib/camelizeStyleName":42}],13:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17927,7 +17927,7 @@ module.exports = function isPlainObject(o) {
   return true;
 };
 
-},{"isobject":30}],24:[function(require,module,exports) {
+},{"isobject":30}],21:[function(require,module,exports) {
 /*
  *          __        ___
  *    _____/ /___  __/ (_)____
@@ -19537,7 +19537,7 @@ module.exports = function isPlainObject(o) {
 	return stylis
 }));
 
-},{}],21:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 (function (factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? (module['exports'] = factory()) :
 		typeof define === 'function' && define['amd'] ? define(factory()) :
@@ -19587,7 +19587,7 @@ module.exports = function isPlainObject(o) {
 	}
 }))
 
-},{}],27:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -20104,7 +20104,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
   return ReactPropTypes;
 };
-},{"fbjs/lib/emptyFunction":31,"fbjs/lib/invariant":33,"fbjs/lib/warning":35,"object-assign":25,"./lib/ReactPropTypesSecret":28,"./checkPropTypes":29}],26:[function(require,module,exports) {
+},{"fbjs/lib/emptyFunction":32,"fbjs/lib/invariant":39,"fbjs/lib/warning":40,"object-assign":25,"./lib/ReactPropTypesSecret":29,"./checkPropTypes":28}],27:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -20164,7 +20164,7 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
-},{"fbjs/lib/emptyFunction":31,"fbjs/lib/invariant":33,"./lib/ReactPropTypesSecret":28}],23:[function(require,module,exports) {
+},{"fbjs/lib/emptyFunction":32,"fbjs/lib/invariant":39,"./lib/ReactPropTypesSecret":29}],23:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -20188,7 +20188,7 @@ if ('development' !== 'production') {
   // http://fb.me/prop-types-in-prod
   module.exports = require('./factoryWithThrowingShims')();
 }
-},{"./factoryWithTypeCheckers":27,"./factoryWithThrowingShims":26}],22:[function(require,module,exports) {
+},{"./factoryWithTypeCheckers":26,"./factoryWithThrowingShims":27}],24:[function(require,module,exports) {
 /**
  * Copyright 2015, Yahoo! Inc.
  * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
@@ -22274,7 +22274,7 @@ exports.ServerStyleSheet = ServerStyleSheet;
 exports.StyleSheetManager = StyleSheetManager;
 exports.default = styled;
 //# sourceMappingURL=styled-components.browser.es.js.map
-},{"is-plain-object":20,"stylis":24,"stylis-rule-sheet":21,"react":13,"prop-types":23,"hoist-non-react-statics":22}],11:[function(require,module,exports) {
+},{"is-plain-object":20,"stylis":21,"stylis-rule-sheet":22,"react":14,"prop-types":23,"hoist-non-react-statics":24}],11:[function(require,module,exports) {
 module.exports = [{"height":"461439","domain":"burstcoin.cc:3333","url":"http://burstcoin.cc:3333","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"N/A","type":"Faucet","https":"No","state":"OK","available":true},{"height":"461439","domain":"pool.burstmining.club","url":"http://pool.burstmining.club","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"86400","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"xen.poolofd32th.club","url":"http://xen.poolofd32th.club","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"2592000","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"all.poolofd32th.club","url":"http://all.poolofd32th.club","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"2592000","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"m.burst4all.com:8124","url":"http://m.burst4all.com:8124","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"2592000","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"burst.btfg.space","url":"http://burst.btfg.space","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"Unlimited","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"pool.burstpay.net:8124","url":"http://pool.burstpay.net:8124","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"2592000","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"bibenwei.com:8081","url":"http://bibenwei.com:8081","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"345600","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"burstneon.ddns.net:8124","url":"http://burstneon.ddns.net:8124","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"Unlimited","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"pool.burstcoin.space:8124","url":"http://pool.burstcoin.space:8124","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"2592000","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"pool.burstcoin.ml","url":"http://pool.burstcoin.ml","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"7776000","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"burst.ninja","url":"http://burst.ninja","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"345600","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"burstpool.net:8124","url":"http://burstpool.net:8124","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"1296000","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"burst.cryptosphere.world:8124","url":"http://burst.cryptosphere.world:8124","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"78892318800","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"pool.burstcoin.sk","url":"http://pool.burstcoin.sk","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"4000000","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"fastpool.info:8080","url":"http://fastpool.info:8080","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"8000001","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"pool.burstcoin.ro:8080","url":"http://pool.burstcoin.ro:8080","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"7776000","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"pool.burstcoin.asia:8080","url":"http://pool.burstcoin.asia:8080","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"Unlimited","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"100pb.online","url":"http://100pb.online","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"604800","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"all.poolofd32th.club:8124","url":"http://all.poolofd32th.club:8124","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"2592000","type":"Pool","https":"No","state":"OK","available":true},{"height":"461439","domain":"wallet.smit.pro:8125","url":"https://wallet.smit.pro:8125","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"N/A","type":"Wallet","https":"Yes","state":"OK","available":true},{"height":"461439","domain":"wallet3.burstnation.com:8125","url":"https://wallet3.burstnation.com:8125","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"N/A","type":"Wallet","https":"Yes","state":"OK","available":true},{"height":"461439","domain":"wallet.burstcoin.ro","url":"https://wallet.burstcoin.ro","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"N/A","type":"Wallet","https":"Yes","state":"OK","available":true},{"height":"461439","domain":"wallet1.burstnation.com:8125","url":"https://wallet1.burstnation.com:8125","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"N/A","type":"Wallet","https":"Yes","state":"OK","available":true},{"height":"461439","domain":"wallet.burstcoin.asia","url":"http://wallet.burstcoin.asia","baseTarget":"75034","generationSignature":"91bb016ae13f84e53063305d1...","targetDeadline":"N/A","type":"Wallet","https":"No","state":"OK","available":true},{"height":"455342","domain":"sono-burstteampool.com","url":"http://sono-burstteampool.com","baseTarget":"71522","generationSignature":"1ba7c850eda140043e7cd321f...","targetDeadline":"62208000","type":"Pool","https":"No","state":"STUCK","available":true},{"height":"","domain":"burst.cryptoguru.org","url":"burst.cryptoguru.org","baseTarget":"","generationSignature":"","targetDeadline":"","type":"N/A","https":null,"state":null,"available":false},{"height":"","domain":"wallet2.burstcoin.sk:8126","url":"wallet2.burstcoin.sk:8126","baseTarget":"","generationSignature":"","targetDeadline":"","type":"N/A","https":null,"state":null,"available":false}];
 },{}],8:[function(require,module,exports) {
 'use strict';
@@ -22451,7 +22451,7 @@ exports.default = ProfitCalculator;
       d = 3600 * d / a;
       a = 24 * d * magicFactor;
 */
-},{"react":13,"styled-components":15,"../../pricedata.json":11}],12:[function(require,module,exports) {
+},{"react":14,"styled-components":15,"../../pricedata.json":11}],12:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -22594,7 +22594,7 @@ var App = function (_React$Component) {
 
 var wrapper = document.getElementById("app");
 wrapper ? _reactDom2.default.render(_react2.default.createElement(App, null), wrapper) : false;
-},{"react":13,"react-dom":14,"./components/ProfitCalculator.js":8,"styled-components":15,"./index.css":7}],47:[function(require,module,exports) {
+},{"react":14,"react-dom":13,"./components/ProfitCalculator.js":8,"styled-components":15,"./index.css":7}],47:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -22616,7 +22616,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58968' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '64166' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
